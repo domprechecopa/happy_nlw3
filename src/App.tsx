@@ -1,23 +1,10 @@
 import React from 'react';
+import Routes from './routes';
+import './style/global.css';
 
-interface TitleProps {
-  text: string;
-}
-
-function Title(props: TitleProps) {
-  // eslint-disable-next-line react/destructuring-assignment
-  return <h1>{props.text}</h1>;
-}
-
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 function App() {
-  return (
-    <div className="App">
-      <Title text="Titulo 1" />
-      <Title text="Titulo 2" />
-      <Title text="Titulo 3" />
-      <Title text="Titulo 4" />
-    </div>
-  );
+  return <Routes />;
 }
 
 export default App;
